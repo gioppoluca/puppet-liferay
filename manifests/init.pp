@@ -22,8 +22,25 @@ class liferay(
 ensure => 'directory'}
   
   file{"$libext/activation.jar":
-    source => "puppet://modules/liferay/$liferay::version/activation.jar"
-    
+    source => "puppet:///modules/liferay/$liferay::version/activation.jar"
+  }
+  file{"$libext/jms.jar":
+    source => "puppet:///modules/liferay/$liferay::version/jms.jar"
+  }
+  file{"$libext/jta.jar":
+    source => "puppet:///modules/liferay/$liferay::version/jta.jar"
+  }
+  file{"$libext/jutf7.jar":
+    source => "puppet:///modules/liferay/$liferay::version/jutf7.jar"
+  }
+  file{"$libext/mail.jar":
+    source => "puppet:///modules/liferay/$liferay::version/mail.jar"
+  }
+  file{"$libext/persistence.jar":
+    source => "puppet:///modules/liferay/$liferay::version/persistence.jar"
+  }
+  file{"$libext/ccpp.jar":
+    source => "puppet:///modules/liferay/$liferay::version/ccpp.jar"
   }
   
 
