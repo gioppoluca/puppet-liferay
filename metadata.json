@@ -1,11 +1,20 @@
 {
-  "author": "Luca Gioppo",
-  "dependencies": [],
+  "author": "gioppoluca",
+  "dependencies": [{"name":"puppetlabs/tomcat","version_requirement":">= 1.2.0"}],
   "license": "",
   "name": "gioppoluca-liferay",
   "operatingsystem_support": [],
   "project_page": "",
-  "requirements": [],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.3.0 < 4.0.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
   "source": "",
   "summary": "",
   "tags": [],
