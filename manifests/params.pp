@@ -6,4 +6,5 @@ class liferay::params{
   $dbname=''
   $dbuser=''
   $dbpass=''
+  $wizard='true'
 }

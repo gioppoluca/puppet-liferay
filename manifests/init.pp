@@ -18,6 +18,7 @@ class liferay (
   $dbname=$liferay::params::dbname,
   $dbuser=$liferay::params::dbuser,
   $dbpass=$liferay::params::dbpass,
+  $wizard=$liferay::params::wizard,
   ) inherits liferay::params {
   # http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.2%20GA3/liferay-portal-6.1.2-ce-ga3-20130816114619181.war/download
   $libext = "$liferay::catalina_base/lib/ext"
