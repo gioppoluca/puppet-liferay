@@ -1,4 +1,4 @@
 admin.email.from.name=admin admin
-liferay.home=/opt/clearo/liferay-portal-6.1.1-ce-ga2
+liferay.home=<%= scope.lookupvar('liferay::catalina_home') %>
 admin.email.from.address=admin@csi.it
-setup.wizard.enabled=<%= scope.lookupvar('liferay::dbpass') %>
+setup.wizard.enabled=<%= scope.lookupvar('liferay::wizard') %>

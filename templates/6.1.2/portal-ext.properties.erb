@@ -1,9 +1,9 @@
 # PostgreSQL
 #
-jdbc.default.driverClassName=org.postgresql.Driver
-jdbc.default.url=jdbc:postgresql://<%= scope.lookupvar('liferay::dbhost') %>:5432/<%= scope.lookupvar('liferay::dbname') %>
-jdbc.default.username=<%= scope.lookupvar('liferay::dbuser') %>
-jdbc.default.password=<%= scope.lookupvar('liferay::dbpass') %>
+#jdbc.default.driverClassName=org.postgresql.Driver
+#jdbc.default.url=jdbc:postgresql://<%= scope.lookupvar('liferay::dbhost') %>:5432/<%= scope.lookupvar('liferay::dbname') %>
+#jdbc.default.username=<%= scope.lookupvar('liferay::dbuser') %>
+#jdbc.default.password=<%= scope.lookupvar('liferay::dbpass') %>
 
 #Proxy
 
@@ -13,68 +13,68 @@ jdbc.default.password=<%= scope.lookupvar('liferay::dbpass') %>
 # Conf. per HTTPS signin
 #company.security.auth.requires.https=true
 # Conf. Liferay Sync
-dl.show.liferay.sync.message=false
+#dl.show.liferay.sync.message=false
 
 # JSON Web Service
-json.web.service.enabled=false
-jsonws.servlet.hosts.allowed=127.0.0.1,158.102.113.252
+#json.web.service.enabled=false
+#jsonws.servlet.hosts.allowed=127.0.0.1,158.102.113.252
 
 # Conf Language
-user.country=IT
-user.language=it
+#user.country=IT
+#user.language=it
 
 
 # Delete default document type in DM
-application.startup.events=com.liferay.portal.events.AppStartupAction,com.liferay.portal.events.ChannelHubAppStartupAction
+#application.startup.events=com.liferay.portal.events.AppStartupAction,com.liferay.portal.events.ChannelHubAppStartupAction
 
 
 # Delete domments in DM
-dl.file.entry.comments.enabled=false
+#dl.file.entry.comments.enabled=false
 # Enabled draft in DM
 # dl.file.entry.drafts.enabled=true
 
 
 # Delete Social Bookmarks
-social.bookmark.types=
+#social.bookmark.types=
 
 # View live session
-live.users.enabled=true
+#live.users.enabled=true
 
 #Private pages OFF
 
-layout.user.private.layouts.enabled=false
-layout.user.private.layouts.modifiable=false
-layout.user.private.layouts.auto.create=false
+#layout.user.private.layouts.enabled=false
+#layout.user.private.layouts.modifiable=false
+#layout.user.private.layouts.auto.create=false
 
-layout.user.public.layouts.enabled=false
-layout.user.public.layouts.modifiable=false
-layout.user.public.layouts.auto.create=false
+#layout.user.public.layouts.enabled=false
+#layout.user.public.layouts.modifiable=false
+#layout.user.public.layouts.auto.create=false
 
-layout.show.portlet.access.denied=false
+#layout.show.portlet.access.denied=false
 
 #Max filesize upload
 
-dl.file.max.size=52428800
+#dl.file.max.size=52428800
 
-axis.servlet.hosts.allowed=10.118.15.226,127.0.0.1,10.118.11.61,158.102.113.252
-axis.servlet.https.required=false
+#axis.servlet.hosts.allowed=10.118.15.226,127.0.0.1,10.118.11.61,158.102.113.252
+#axis.servlet.https.required=false
 
 
 ##
 ## Session
 ## Nota: il session timeout e' da modificare concordemente sul web.xml in /tomcat.../conf
 
-session.timeout=10
-session.timeout.warning=1
-session.timeout.auto.extend=true
+#session.timeout=10
+#session.timeout.warning=1
+#session.timeout.auto.extend=true
 
 
 
 # Web Server - public (fronted) web
 #
-web.server.host=trasparenza.regione.piemonte.it
+#web.server.host=trasparenza.regione.piemonte.it
 
 #
 # Set ports for http server
 #
-web.server.http.port=80
+#web.server.http.port=80
