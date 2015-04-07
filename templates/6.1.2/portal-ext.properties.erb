@@ -1,14 +1,14 @@
 # PostgreSQL
 #
 jdbc.default.driverClassName=org.postgresql.Driver
-jdbc.default.url=jdbc:postgresql://dbhost:5432/LIFER
-jdbc.default.username=
-jdbc.default.password=
+jdbc.default.url=jdbc:postgresql://<%= scope.lookupvar('liferay::dbhost') %>:5432/<%= scope.lookupvar('liferay::dbname') %>
+jdbc.default.username=<%= scope.lookupvar('liferay::dbuser') %>
+jdbc.default.password=<%= scope.lookupvar('liferay::dbpass') %>
 
 #Proxy
 
-http.proxyHost=http://proxy-srv.csi.it
-http.proxyPort=3128
+#http.proxyHost=http://proxy-srv.csi.it
+#http.proxyPort=3128
 
 # Conf. per HTTPS signin
 #company.security.auth.requires.https=true
@@ -72,9 +72,9 @@ session.timeout.auto.extend=true
 
 # Web Server - public (fronted) web
 #
-#web.server.host=trasparenza.regione.piemonte.it
+web.server.host=trasparenza.regione.piemonte.it
 
 #
 # Set ports for http server
 #
-#web.server.http.port=80
+web.server.http.port=80

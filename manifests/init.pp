@@ -13,7 +13,12 @@
 class liferay (
   $catalina_home = $liferay::params::catalina_home,
   $catalina_base = $liferay::params::catalina_base,
-  $version       = $liferay::params::version,) inherits liferay::params {
+  $version       = $liferay::params::version,
+  $dbhost=$liferay::params::dbhost,
+  $dbname=$liferay::params::dbname,
+  $dbuser=$liferay::params::dbuser,
+  $dbpass=$liferay::params::dbpass,
+  ) inherits liferay::params {
   # http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.2%20GA3/liferay-portal-6.1.2-ce-ga3-20130816114619181.war/download
   $libext = "$liferay::catalina_base/lib/ext"
 
@@ -38,6 +43,8 @@ class liferay (
   file { "$libext/portlet.jar": source => "puppet:///modules/liferay/$liferay::version/portlet.jar" }
   file { "$libext/postgresql.jar": source => "puppet:///modules/liferay/$liferay::version/postgresql.jar" }
   file { "$libext/support-tomcat.jar": source => "puppet:///modules/liferay/$liferay::version/support-tomcat.jar" }
+  file { "$libext/hsql.jar": source => "puppet:///modules/liferay/$liferay::version/hsql.jar" }
+  file { "$libext/junit.jar": source => "puppet:///modules/liferay/$liferay::version/junit.jar" }
   
   # files on the temp folder
   $temp = "$liferay::catalina_base/temp"
