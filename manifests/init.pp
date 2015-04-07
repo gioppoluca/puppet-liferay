@@ -23,6 +23,11 @@ class liferay (
   # http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.2%20GA3/liferay-portal-6.1.2-ce-ga3-20130816114619181.war/download
   $libext = "$liferay::catalina_base/lib/ext"
 
+File{
+  owner => tomcat,
+  group => tomcat,
+}
+
   file { $libext: ensure => 'directory' }
 
   file { "$libext/activation.jar": source => "puppet:///modules/liferay/$liferay::version/activation.jar" }
