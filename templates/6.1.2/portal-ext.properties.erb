@@ -1,9 +1,15 @@
 # PostgreSQL
 #
-#jdbc.default.driverClassName=org.postgresql.Driver
-#jdbc.default.url=jdbc:postgresql://<%= scope.lookupvar('liferay::dbhost') %>:5432/<%= scope.lookupvar('liferay::dbname') %>
-#jdbc.default.username=<%= scope.lookupvar('liferay::dbuser') %>
-#jdbc.default.password=<%= scope.lookupvar('liferay::dbpass') %>
+jdbc.default.driverClassName=org.postgresql.Driver
+jdbc.default.url=jdbc:postgresql://<%= scope.lookupvar('liferay::dbhost') %>:5432/<%= scope.lookupvar('liferay::dbname') %>
+jdbc.default.username=<%= scope.lookupvar('liferay::dbuser') %>
+jdbc.default.password=<%= scope.lookupvar('liferay::dbpass') %>
+
+# Dafault admin
+default.admin.password=test
+default.admin.email.address.prefix=test
+default.admin.first.name=test
+default.admin.last.name=test
 
 #Proxy
 
@@ -56,9 +62,9 @@
 
 #dl.file.max.size=52428800
 
-#axis.servlet.hosts.allowed=10.118.15.226,127.0.0.1,10.118.11.61,158.102.113.252
-#axis.servlet.https.required=false
-
+axis.servlet.hosts.allowed=127.0.0.1
+axis.servlet.https.required=false
+jsonws.web.service.public.methods=*
 
 ##
 ## Session
