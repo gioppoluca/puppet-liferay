@@ -95,6 +95,10 @@ file { "$liferay::catalina_home/portal-setup-wizard.properties": content => temp
 tomcat::war { 'ROOT.war':
         catalina_base => $liferay::catalina_base,
         war_source => 'http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.2%20GA3/liferay-portal-6.1.2-ce-ga3-20130816114619181.war/download',
-      }
+      }->  file { "$liferay::catalina_base/webapp/ROOT": ensure => 'absent',force => true, }->
+      exec { 'tomcat chown':
+     command  => "/bin/chown -R tomcat:tomcat $liferay::catalina_home",
+}
+      
 
 }
