@@ -43,7 +43,7 @@ File{
   file { "$libext/postgresql.jar": source => "puppet:///modules/liferay/$liferay::version/postgresql.jar" }->
   file { "$libext/support-tomcat.jar": source => "puppet:///modules/liferay/$liferay::version/support-tomcat.jar" }->
   file { "$libext/hsql.jar": source => "puppet:///modules/liferay/$liferay::version/hsql.jar" }->
-  file { "$libext/junit.jar": source => "puppet:///modules/liferay/$liferay::version/junit.jar" }->
+  file { "$libext/junit.jar": source => "puppet:///modules/liferay/$liferay::version/junit.jar" }
   
   # files on the temp folder
   $temp = "$liferay::catalina_base/temp"
