@@ -1,6 +1,6 @@
 {
   "author": "gioppoluca",
-  "dependencies": [{"name":"puppetlabs/tomcat","version_requirement":">= 1.2.0"}],
+  "dependencies": [{"name":"puppetlabs/tomcat","version_requirement":">= 1.3.0"},{"name":"puppetlabs/java","version_requirement":">= 1.3.0"}],
   "license": "",
   "name": "gioppoluca-liferay",
   "operatingsystem_support": [],
