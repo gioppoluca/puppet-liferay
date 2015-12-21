@@ -6,10 +6,10 @@ jdbc.default.username=<%= scope.lookupvar('liferay::dbuser') %>
 jdbc.default.password=<%= scope.lookupvar('liferay::dbpass') %>
 
 # Dafault admin
-default.admin.password=test
-default.admin.email.address.prefix=test
-default.admin.first.name=test
-default.admin.last.name=test
+default.admin.password=<%= scope.lookupvar('liferay::admin_password') %>
+default.admin.email.address.prefix=<%= scope.lookupvar('liferay::admin_mail') %>
+default.admin.first.name=<%= scope.lookupvar('liferay::admin_user_first') %>
+default.admin.last.name=<%= scope.lookupvar('liferay::admin_user_last') %>
 
 #Proxy
 

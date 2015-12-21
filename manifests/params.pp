@@ -7,4 +7,8 @@ class liferay::params{
   $dbuser=''
   $dbpass=''
   $wizard='true'
+  $admin_user_last='admin'
+  $admin_user_first='admin'
+  $admin_password='admin'
+  $admin_mail='admin@domain.com'
 }

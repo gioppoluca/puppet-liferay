@@ -1,4 +1,4 @@
 admin.email.from.name=admin admin
 liferay.home=<%= scope.lookupvar('liferay::catalina_home') %>
-admin.email.from.address=admin@csi.it
+admin.email.from.address=<%= scope.lookupvar('liferay::admin_mail') %>
 setup.wizard.enabled=<%= scope.lookupvar('liferay::wizard') %>
